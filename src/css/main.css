@@ -1,0 +1,241 @@
+html{
+  width: 100%;
+  height: 100%;
+  color: #333333;
+}
+body{
+  //font-family: 'Hiragino Sans GB','Arail','Microsoft YaHei';
+  background-color: #f7f7f7;
+}
+
+*{margin:0;padding:0}
+li{list-style-type: none;}
+a{text-decoration: none}
+img{border: 0;vertical-align:bottom;display: block;}
+
+.warpper header{
+  background-color: #ffffff;
+  padding:0 0.42rem;
+}
+
+.warpper h1{
+  font-size: .58rem;
+  line-height: .8rem;
+}
+
+/*间距*/
+.pd{
+  padding-left:0.42rem!important;
+  padding-right: 0.42rem!important;
+}
+
+/*popup_layer*/
+.popup_layer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup_layer .bg{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+}
+
+.popup_layer .box{
+  width: 6.46666667rem;
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  margin: -1.68rem 0 0 -3.235rem;
+  top: 50%;
+  left: 50%;
+}
+
+.confirm{
+  padding-top: .53333rem;
+  padding-bottom: .53333rem;
+}
+
+.confirm h3{
+  font-size: .3733333rem;
+  line-height: .5866667rem;
+  padding: 0 .88rem;
+}
+
+.confirm .row{
+  text-align: center;
+  padding: 0 .88rem;
+}
+
+.confirm .col-xs-6 a,.confirm .col-xs-6 a:visited{
+  font-size: .4rem;
+  color: #9e9e9e;
+}
+
+.confirm .col-xs-6 a:active,.confirm .col-xs-6 a.go {
+  color: #6c9ae7;
+}
+
+/*标签*/
+.tag{
+  font-size: .3rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  overflow: hidden;
+}
+
+.tag a{
+  float: left;
+  color: #6b9ce8;
+  border: 1px solid #6b9ce8;
+  border-radius: 10px;
+  padding: .133333rem;
+  margin-right: .4rem;
+  text-decoration: none;
+}
+
+/*模块分割样式*/
+.bl{
+  margin-bottom: .24rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+
+.content_text{
+  font-size: .42rem;
+  line-height: .72rem;
+  margin-top: .32rem;
+}
+
+/*教师公用*/
+.teacher{
+  background-color: #ffffff;
+  font-size: .42rem;
+  overflow: hidden;
+}
+
+.teacher>div{
+  float: left;
+}
+
+.teacher .timg{
+  width: 1.06rem;
+  height: 1.06rem;
+  border-radius: 50%;
+  margin-right: 0.18rem;
+}
+
+.teacher .timg img{
+  height: 100%;
+  width: 100%;
+}
+
+.teacher .tname{
+  width: 5.4444rem;
+  height: 1.06rem;
+  margin-top: .12rem;
+  
+}
+
+.teacher .tname .desr{
+  margin-top: .16rem;
+}
+
+.teacher  .tname .desr{
+  font-size: .27rem;
+  color: #999999;
+}
+
+.teacher .follow{
+  padding-top: .1333rem;
+  float: right;
+}
+
+.teacher .follow a{
+  display: block;
+  width: 2rem;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  font-size: .32rem;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+}
+
+.teacher .link{
+  background-color: #ffc720;
+  color: #fff;
+}
+
+.teacher .active{
+  background-color: #e7e7e7;
+  color: #aaa;
+}
+
+/*app*/
+.openapp{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  border-top: 1px solid #e5e5e5;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.openapp .inner{
+  height: 56px;
+  padding: .4rem;
+}
+
+.openapp .imglayer{
+  margin-right: .32rem;
+  float: left;
+}
+
+.openapp .slogen{
+  font-size: .32rem;
+  height: 56px;
+  float: left;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.openapp .btn{
+  float: right;
+  margin-right: 20px;
+}
+
+.openapp .close{
+  display: block;
+  width: .26666rem;
+  height: .26666rem;
+  text-align: center;
+  line-height: .26666rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: .26666rem;
+}
+
+.openapp .close a{
+  color: #e5e5e5;
+}
+
+.openapp .btn a{
+  display: block;
+  font-size: 24px;
+  padding: 18px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  border: 1px solid #6b9ce8;
+  border-radius: 10px;
+  color: #6b9ce8;
+}

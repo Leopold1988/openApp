@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="apple-itunes-app" content="app-id=414478124" />  -->
+  <title></title>
+  <script>
+  //获取像素比
+  //          console.log(window.devicePixelRatio);
+  var pixelRatio = 1 / window.devicePixelRatio;
+  //          console.log(pixelRatio);
+  //通过js动态设置视口(viewport)
+  document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+
+  // 条件：尺寸越大，则字体大小越大。尺寸越小，则字体大小越小。
+
+  // 获取html节点
+  var html = document.getElementsByTagName('html')[0];
+  // 获取屏幕宽度
+  var pageWidth = html.getBoundingClientRect().width;
+  // 屏幕宽度 / 固定数值 = 基准值
+  html.style.fontSize = pageWidth / 10 + "px";
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/listenDetail.css">
+  <style>
+  .audiojs{
+    width:auto;
+    height: .2rem;
+    position: relative;
+    overflow: inherit;
+    background: #fff;
+    background-image: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    font-family: inherit;
+  }
+
+  .audiojs .pause{
+    width: 80px;
+    height: 80px;
+    background: #fff url(img/audiopause.png) center no-repeat;
+  }
+
+  .audiojs .play{
+    width: 80px;
+    height: 80px;
+    background: #fff url(img/audioplay.png) center no-repeat;
+  }
+
+  .audiojs .play-pause{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: .3rem;
+    margin: 0 0 0 -40px;
+    background: #000;
+    height: 28px;
+    border: none;
+    padding: 0;
+    overflow: initial;
+  }
+
+  .audiojs .scrubber{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-top: none;
+    background-color: #e0e0e0;
+  }
+
+  .audiojs .progress{
+    height: 100%;
+    background-color: #ff9700;
+    background-image: none;
+  }
+
+  .audiojs .loaded{
+    height: 100%;
+    background-color: #cccccc;
+    background-image: none;
+  }
+
+  .audiojs .time{
+    border: none;
+    text-shadow: none;
+    color: #000;
+    font-size: .3rem;
+  }
+
+  .audiojs .time em{
+    position: absolute;
+    left: 0;
+    top: .4rem;
+    color: #000;
+  }
+
+  .audiojs .time strong{
+    position: absolute;
+    right: 0;
+    top: .4rem;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="warpper listen">
+    <header class="">
+      <h1>第23期：上公开课没报名？教你课后回放追单秘籍！</h1>
+      <div class="tag pd">
+        <a href="javascript:;">招生宣传</a>
+        <a href="javascript:;">教学科研</a>
+      </div>
+      <!-- <div class="teacher_head">
+        <div class="hp">
+          <img src="img/pic2.jpg">
+        </div>
+        <div class="hpn">
+          <h3>讲师&nbsp;/&nbsp;<span class="n">张琳琳</span></h3>
+          <p>预约专家，北大教育学教授</p>
+        </div>
+      </div> -->
+      <audio src="audio/Love.mp3"></audio>
+      <!-- <audio src="http://audio-storage.static.tengyue360.com/dailyaudio/3ab02c0ffc9a5f2318263758a68cc27b.mp3"></audio> -->
+      <!-- <audio preload="auto" controls>
+        <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+        <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+        <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+      </audio> -->
+    </header>
+    <div class="teacher_infor pd">
+      <div class="teacher">
+        <div class="timg">
+          <img src="img/headicon.jpg">
+        </div>
+        <div class="tname">
+          <span class="n">张琳琳</span>
+          <p class="desr">特约专家，北大教育学教授</p>
+        </div>
+        <div class="follow">
+          <!-- <a href="javascript:;" class="link">+关注</a> -->
+          <!-- <a href="javascript:;" class="active">已关注</a> -->
+        </div>
+      </div>
+      <p class="infor content_text">所以如果在定义字体大小时，使用px作为单位，那一旦用户改变显示器分辨率从800到1024，用户实际看到的文字就要变“小”（自然长度单位），甚至会看不清，影响浏览。</p>
+    </div>
+    <!-- <div class="popup_layer">
+      <div class="bg"></div>
+    </div> -->
+  </div>
+  <div class="openapp">
+    <div class="close">
+      <a href="javascript:;">x</a>
+    </div>
+    <div class="inner">
+      <div class="imglayer">
+        <img src="img/hyz_logo.png">
+      </div>
+      <div class="slogen">
+        <p>来好园长，做名园长！</p>
+      </div>
+      <div class="btn">
+        <a href="javascript:openApp();">APP内打开</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/zepto.min.js"></script>
+  <script src="audiojs/audio.js"></script>
+  <script src="js/broswer.js"></script>
+  <script src="js/openapp.js"></script> 
+  <script>
+  $(function(){ 
+    audiojs.events.ready(function() {
+      audiojs.createAll();
+    });
+
+    $('.openapp .close').on("click", function(){
+      $('.openapp').hide();
+    });
+  });
+  </script>
+  
+</body>
+
+</html>

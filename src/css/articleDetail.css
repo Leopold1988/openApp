@@ -1,0 +1,55 @@
+.warpper .line{
+  height: .04rem;
+  width: 2.5rem;
+  margin: .48rem 0 .27rem;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.warpper .author{
+  margin-bottom: .2rem;
+  font-size: .4rem;
+}
+
+.warpper .author .desr{
+  font-size: .27rem;
+  color: #999999;
+}
+
+.warpper .other{
+  font-size: .21rem;
+  color: #999999;
+  padding-bottom: .61rem;
+  overflow: hidden;
+}
+
+.warpper .other .d{
+  font-size: .21rem;
+  float: left;
+}
+
+.warpper .other .pv{
+  float: left;
+  font-size: .21rem;
+  margin-left: .3rem;
+}
+
+.warpper .content{
+  background-color: #ffffff;
+}
+
+.warpper .content .pic{
+  width: 100%;
+}
+
+.warpper .content .tag{
+  font-size: .3rem;
+  overflow: hidden;
+}
+
+.warpper footer{
+  background-color: #ffffff;
+  padding: .7rem .48rem;
+  font-size: .4rem;
+  overflow: hidden;
+}

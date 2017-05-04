@@ -1,0 +1,106 @@
+body{
+  background-color: #fff;
+}
+
+.warpper{
+  padding-bottom: 200px;
+}
+
+.warpper header{
+  background-color: #ffffff;
+  padding:0 0.42rem;
+  margin-bottom: 1rem;
+}
+
+.teacher_infor{
+  background-color: #ffffff;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
+.radio_list{
+  background-color: #ffffff;
+}
+
+.radio_list h2{
+  font-size: .27rem;
+  color: #999999;
+  padding:.6rem .6rem 0;
+}
+
+.radio_list ul li{
+  border-bottom: 1px solid #e1e1e1;
+  margin-top: .6rem;
+}
+
+.radio_list ul li:last-child{
+  border-bottom: 0;
+}
+
+.radio_list ul li p{
+  font-size: .3rem;
+  line-height: .5rem;
+}
+
+.radio_list ul li.active>p.pd{
+  color: #fc7e03;
+  padding-left: 1rem!important;
+  background: url("../img/home_turn_label_nor@3x.png") .4rem center no-repeat;
+}
+
+.radio_list .radio_info{
+  overflow: hidden;
+  padding: .3rem 0;
+}
+
+.radio_list .radio_info>div{
+  float: left;
+  color: #999999;
+  font-size: .2rem;
+  padding-right: .27rem;
+}
+
+.radio_list .radio_info>div img{
+  height: .21rem;
+  line-height: .21rem;
+}
+
+.radio_list .radio_info .status{
+  color: #fc7e03;
+}
+
+.teacher_head{
+  text-align: center;
+}
+
+.teacher_head .hp{
+  display: inline-block;
+  border: 1px solid #9a9a9a;
+  margin-bottom: .373333rem;
+}
+
+.teacher_head .hpn h3{
+  font-size: .373333rem;
+}
+
+.teacher_head .hpn p{
+  font-size: .3rem;
+  line-height: .45rem;
+  color: #999999;
+}
+
+.teacher{
+  margin-top: .3rem;
+}
+
+.audioplayer{
+  display: block;
+  width: 100%;
+  margin-top: .6rem;
+  font-size: .3rem;
+}
+
+.listen .tag{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}

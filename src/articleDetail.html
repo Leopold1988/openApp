@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    //获取像素比
+    //          console.log(window.devicePixelRatio);
+    var pixelRatio = 1 / window.devicePixelRatio;
+    //          console.log(pixelRatio);
+    //通过js动态设置视口(viewport)
+    document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+
+    // 条件：尺寸越大，则字体大小越大。尺寸越小，则字体大小越小。
+
+    // 获取html节点
+    var html = document.getElementsByTagName('html')[0];
+    // 获取屏幕宽度
+    var pageWidth = html.getBoundingClientRect().width;
+    // 屏幕宽度 / 固定数值 = 基准值
+    html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+    <link rel="stylesheet" type="text/css" href="lib/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/articleDetail.css">
+</head>
+
+<body>
+    <div class="warpper">
+        <header>
+            <h1>幼儿园里玩得好，孩子才幼儿园里玩得好，孩子才能学得好！幼儿园里玩得好，孩子才能学得好！</h1>
+            <div class="line"></div>
+            <div class="author">
+                作者/<span class="a">好园长</span>
+                <span class="desr">(特约专家，北大教育学教授)</span>
+            </div>
+            <div class="other">
+                <span class="d">2017/4/11 15:30</span>
+                <div class="pv">阅读<span class="num">12345</span></div>
+            </div>
+        </header>
+        <div class="content bl">
+            <img src="img/pic1.jpg" class="pic">
+            <div class="pd content_text">
+                在浏览网页过程中，所有的“大”“小”概念，都是基于“屏幕”这个“界面”上。“屏幕”上的各种信息，包括文字、图片、表格等等，都会随屏幕的分辨率变化而变化，一个100px宽度大小的图片，在800×600分辨率下，要占屏幕宽度的1/8，但在1024×768下，则只占约1/10。所以如果在定义字体大小时，使用px作为单位，那一旦用户改变显示器分辨率从800到1024，用户实际看到的文字就要变“小”（自然长度单位），甚至会看不清，影响浏览。
+
+                那是不是用pt做单位就没这样的问题呢？错！问题同样出现。刚才的例子已经很清楚的说明，在不同分辨率下，无论是px还是pt，都会改变大小。以现在的电脑屏幕情况，还没有一种单位可以保证，在不同分辨率下，一个文字大小可以“固定不变”。因为这很难以实现也不是很有必要：全球电脑用户以亿来数，屏幕从14寸到40寸甚至更高都有，屏幕大小不同，分辨率也不同，要保证一个字体在所有用户面前大小一样，实在是MISSION IMPOSSIBLE。另外，电脑有其自身的调节性。
+            </div>
+            <div class="tag pd">
+                <a href="javascript:;">招生宣传</a>
+                <a href="javascript:;">教学科研</a>
+            </div>
+        </div>
+
+        <footer class="teacher">
+           <!--  <div class="container" style="width:100%">
+                <div class="row">
+                    <div class="col-xs-1">11</div>
+                    <div class="col-xs-6">22</div>
+                </div>
+            </div> -->
+            
+            <div class="timg">
+                <img src="img/headicon.jpg">
+            </div>
+            <div class="tname">
+                <span class="n">张琳琳</span>
+                <p class="desr">特约专家，北大教育学教授</p>
+            </div>
+            <div class="follow">
+                <a href="javascript:;" class="link">+关注</a>
+                <!-- <a href="javascript:;" class="active">已关注</a> -->
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

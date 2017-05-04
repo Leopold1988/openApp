@@ -1,0 +1,13 @@
+{
+  "name": "mobile",
+  "autho": "leopold",
+  "email": "542416615@qq.com",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-server-livereload": "^1.6.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {}
+}
